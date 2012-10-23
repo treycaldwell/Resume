@@ -15,7 +15,7 @@ class ResumeTest < Test::Unit::TestCase
   def test_title_matches_user
     get '/'
     assert last_response.ok?
-    assert_match "<title>Dan Mayer's Resume</title>", last_response.body
+    assert_match "<title>Daniel Mayer  </title>", last_response.body
   end
 
   def test_it_includes_a_email
@@ -41,7 +41,7 @@ class ResumeTest < Test::Unit::TestCase
     assert_match "LaTeX", last_response.body
     assert_match "Markdown", last_response.body
   end
-  
+
   def test_it_displays_powered_by
     get '/'
     assert_match "powered by", last_response.body
