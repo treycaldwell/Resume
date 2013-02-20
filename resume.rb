@@ -7,6 +7,8 @@ require 'less'
 require 'rdiscount'
 require 'maruku'
 
+set :public_folder, File.dirname(__FILE__) + '/public'
+
 get '/' do
    title = resume_data.split("\n").first
    #oops 1.8.7 only?
@@ -42,7 +44,7 @@ get '/pdf' do
   doc = Maruku.new(resume_data)
   tex = doc.to_latex_document
   File.open(latex_file, 'w') {|f| f.write(tex) }
-  `cd tmp && pdflatex resume.tex -interaction=nonstopmode` #'
+  `cd tmp && pdflatex resume.tex -interaction=nonstopmode`
   File.read(pdf_file)
 end
 

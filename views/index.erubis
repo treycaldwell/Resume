@@ -16,5 +16,14 @@
    <div id='footer'>
      This resume is Ruby, powered by <a href="http://github.com/danmayer/Resume">Ruby Resume</a>.
    </div>
+   <div class="ruby-runner" style="display:none;" data-sig="DcIStEig1UNOKvKvx6OLp7n3Iy8=">
+     <pre class="code">
+require 'pdfkit'
+kit = PDFKit.new('http://resume.mayerdan.com/')
+file = kit.to_file('./artifacts/dan_mayer_resume.pdf')
+     </pre>
+   </div>
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+   <script src="/app.js"></script>
 </body>
 </html>
