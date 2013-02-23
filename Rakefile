@@ -93,7 +93,7 @@ end
 namespace :deploy do
   desc "Deploy to Heroku."
   task :heroku do
-    `git push heroku-cedar master`
+    `git push heroku master`
   end
 
   desc "Deploy to Github pages."
