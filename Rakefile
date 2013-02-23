@@ -70,7 +70,7 @@ namespace :test do
 end
 
 desc "render github index page, which can be displayed at user.github.com"
-task :render_for_github do	
+task :render_for_github do
     require File.join(File.dirname(__FILE__), 'lib', 'resume_gem')
     resume = Resume.new('resume.yml')
     resume.write_html_and_css_to_disk('./')
@@ -80,8 +80,8 @@ namespace :heroku do
 
   desc "create a heroku project for your resume"
   task :create do
-    unless ENV.include?("name")	
-      raise "usage: rake heroku:create name=PROJECT_NAME # example danmayer-resume\n" 
+    unless ENV.include?("name")
+      raise "usage: rake heroku:create name=PROJECT_NAME # example danmayer-resume\n"
     end
     project_name = ENV['name']
     puts "creating heroku project #{project_name}"
@@ -93,7 +93,7 @@ end
 namespace :deploy do
   desc "Deploy to Heroku."
   task :heroku do
-    `git push heroku master`
+    `git push heroku-cedar master`
   end
 
   desc "Deploy to Github pages."
@@ -107,7 +107,7 @@ end
 
 namespace :github do
   desc "render github index page, which can be displayed at user.github.com"
-  task :render_pages do	
+  task :render_pages do
     require File.join(File.dirname(__FILE__), 'lib', 'resume_gem')
     resume = Resume.new('resume.yml')
     puts "writing resume github index files to disk"
