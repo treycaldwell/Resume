@@ -17,10 +17,11 @@
      This resume is Ruby, powered by <a href="http://github.com/danmayer/Resume">Ruby Resume</a>.
    </div>
 
-   <div class="ruby-runner-custom" style="display:none;" data-sig="DcIStEig1UNOKvKvx6OLp7n3Iy8=" data-auto-init="false">
+   <% unless = params['no_pdf'] %>
+   <div class="ruby-runner-custom" style="display:none;" data-sig="IhFw4kpAHfpiBkbNv0s4ALR8tjc=" data-auto-init="false">
      <pre class="code">
 require 'pdfkit'
-kit = PDFKit.new('http://resume.mayerdan.com/')
+kit = PDFKit.new('http://resume.mayerdan.com/?no_pdf=true')
 file = kit.to_file('./artifacts/dan_mayer_resume.pdf')
      </pre>
    </div>
@@ -39,6 +40,7 @@ file = kit.to_file('./artifacts/dan_mayer_resume.pdf')
      };
      $('.ruby-runner-custom').codeRunner({'initialize_method' : addPDFLink, 'follow_files' : 'true'});
    </script>
+   <% end %>
 
 </body>
 </html>
