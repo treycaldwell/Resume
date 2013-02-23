@@ -17,7 +17,7 @@
      This resume is Ruby, powered by <a href="http://github.com/danmayer/Resume">Ruby Resume</a>.
    </div>
 
-   <% unless = params['no_pdf'] %>
+   <% unless params['no_pdf'] %>
    <div class="ruby-runner-custom" style="display:none;" data-sig="IhFw4kpAHfpiBkbNv0s4ALR8tjc=" data-auto-init="false">
      <pre class="code">
 require 'pdfkit'
