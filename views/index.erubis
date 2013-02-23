@@ -16,7 +16,8 @@
    <div id='footer'>
      This resume is Ruby, powered by <a href="http://github.com/danmayer/Resume">Ruby Resume</a>.
    </div>
-   <div class="ruby-runner" style="display:none;" data-sig="DcIStEig1UNOKvKvx6OLp7n3Iy8=">
+
+   <div class="ruby-runner-custom" style="display:none;" data-sig="DcIStEig1UNOKvKvx6OLp7n3Iy8=" data-auto-init="false">
      <pre class="code">
 require 'pdfkit'
 kit = PDFKit.new('http://resume.mayerdan.com/')
@@ -24,6 +25,20 @@ file = kit.to_file('./artifacts/dan_mayer_resume.pdf')
      </pre>
    </div>
    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-   <script src="/app.js"></script>
+   <script src="http://git-hook-responder.herokuapp.com/javascript/code-runner.js" type="text/javascript"></script>
+   <script>
+     var addPDFLink = function(currentPluggin) {
+        var element = '#formats';
+        $('#formats').append(' | <a class="run-button" href="#">PDF</a>');
+	$(element).find('.run-button').click(function(e) {
+	  $(element).find('.run-button').text('generating...');
+	  currentPluggin.runExample();
+          e.preventdefault;
+	  return false;
+	});
+     };
+     $('.ruby-runner-custom').codeRunner({'initialize_method' : addPDFLink, 'follow_files' : 'true'});
+   </script>
+
 </body>
 </html>
