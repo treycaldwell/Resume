@@ -36,10 +36,10 @@ PLATFORMS
 DEPENDENCIES
   erubis
   launchy
-  less (= 1.2.20)
+  less
   maruku
-  rack-test (= 0.5.3)
+  rack-test
   rake
   rdiscount
-  sinatra (= 1.0)
+  sinatra
   thin

@@ -1,15 +1,15 @@
 source "https://rubygems.org"
-ruby "1.8.7"
+ruby "1.9.2"
 
 gem 'rake'
-gem 'less', '1.2.20'
+gem 'less'
 gem 'erubis'
-gem 'sinatra', '1.0'
+gem 'sinatra'
 gem 'rdiscount'
 gem 'maruku'
 gem 'thin'
 
 group :development, :test do
-  gem "rack-test", '0.5.3'
+  gem "rack-test"
   gem "launchy"
 end
