@@ -8,6 +8,14 @@ require 'rdiscount'
 require 'maruku'
 require 'pdfkit'
 
+PDFKit.configure do |config|
+  config.wkhtmltopdf = 'vendor/bin/wkhtmltopdf-amd64'
+  config.default_options = {
+    :page_size => 'Legal',
+    :print_media_type => true
+  }
+end
+
 set :public_folder, File.dirname(__FILE__) + '/public'
 
 get '/' do
