@@ -8,6 +8,7 @@ gem 'sinatra'
 gem 'rdiscount'
 gem 'maruku'
 gem 'thin'
+gem 'wkhtmltopdf-heroku'
 gem 'pdfkit'
 
 group :development, :test do

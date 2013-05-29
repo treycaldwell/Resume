@@ -30,6 +30,7 @@ GEM
     treetop (1.4.11)
       polyglot
       polyglot (>= 0.3.1)
+    wkhtmltopdf-heroku (1.0.0)
 
 PLATFORMS
   ruby
@@ -45,3 +46,4 @@ DEPENDENCIES
   rdiscount
   sinatra
   thin
+  wkhtmltopdf-heroku
