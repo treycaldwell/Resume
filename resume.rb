@@ -1,4 +1,3 @@
-#!/home/trey/.rvm/rubies/ruby-1.9.2-p320/bin/ruby
 # A Sinatra app for displaying one's resume in multiple formats
 
 require 'rubygems'
@@ -44,15 +43,10 @@ end
 # note this only works if pdflatex is installed which is part of most LaTeX packages, but doesn't work on Heroku
 # TODO if this ever works on heroku clean it up and add caching
 get '/pdf' do
-  content_type 'application/x-latex'
-  pdf_file = 'tmp/resume.pdf'
-  latex_file = 'tmp/resume.tex'
+  pdf_file = './tmp/resume.pdf'
 
   return File.read(pdf_file) if File.exists?(pdf_file)
   doc = Maruku.new(resume_data)
-  tex = doc.to_latex_document
-#  File.open(latex_file, 'w') {|f| f.write(tex) }
-#  `cd tmp && pdflatex resume.tex -interaction=nonstopmode`
   kit = PDFKit.new(resume_html)
   kit.to_file(pdf_file)
   File.read(pdf_file)
