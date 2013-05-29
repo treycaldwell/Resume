@@ -40,8 +40,7 @@ get '/markdown' do
   resume_data
 end
 
-# note this only works if pdflatex is installed which is part of most LaTeX packages, but doesn't work on Heroku
-# TODO if this ever works on heroku clean it up and add caching
+# TODO add caching on heroku
 get '/pdf' do
   content_type 'application/pdf'
 
