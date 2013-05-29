@@ -13,6 +13,7 @@ GEM
     maruku (0.6.1)
       syntax (>= 1.0.0)
     mutter (0.5.3)
+    pdfkit (0.5.3)
     polyglot (0.3.3)
     rack (1.4.1)
     rack-test (0.5.3)
@@ -38,6 +39,7 @@ DEPENDENCIES
   launchy
   less
   maruku
+  pdfkit
   rack-test
   rake
   rdiscount

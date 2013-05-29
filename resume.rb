@@ -1,4 +1,4 @@
-#!/usr/bin/ruby1.8
+#!/home/trey/.rvm/rubies/ruby-1.9.2-p320/bin/ruby
 # A Sinatra app for displaying one's resume in multiple formats
 
 require 'rubygems'
@@ -6,15 +6,15 @@ require 'sinatra'
 require 'less'
 require 'rdiscount'
 require 'maruku'
+require 'pdfkit'
 
 set :public_folder, File.dirname(__FILE__) + '/public'
 
 get '/' do
-   title = resume_data.split("\n").first
+   title = resume_data.split("\n").first.gsub(/[^0-9a-z ]/i, '')
    #oops 1.8.7 only?
     #resume_data.lines.first.strip
-   resume = RDiscount.new(resume_data, :smart).to_html
-   erubis :index, :locals => { :title => title, :resume => resume, :formats => true }
+   erubis :index, :locals => { :title => title, :resume => resume_html, :formats => true }
 end
 
 get '/style.css' do
@@ -43,11 +43,18 @@ get '/pdf' do
   return File.read(pdf_file) if File.exists?(pdf_file)
   doc = Maruku.new(resume_data)
   tex = doc.to_latex_document
-  File.open(latex_file, 'w') {|f| f.write(tex) }
-  `cd tmp && pdflatex resume.tex -interaction=nonstopmode`
+#  File.open(latex_file, 'w') {|f| f.write(tex) }
+#  `cd tmp && pdflatex resume.tex -interaction=nonstopmode`
+  kit = PDFKit.new(resume_html)
+  kit.to_file(pdf_file)
   File.read(pdf_file)
 end
 
 def resume_data
   File.read("data/resume.md")
 end
+
+def resume_html
+  RDiscount.new(resume_data, :smart).to_html
+end
+
