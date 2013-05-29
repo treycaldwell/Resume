@@ -43,13 +43,14 @@ end
 # note this only works if pdflatex is installed which is part of most LaTeX packages, but doesn't work on Heroku
 # TODO if this ever works on heroku clean it up and add caching
 get '/pdf' do
-  pdf_file = './tmp/resume.pdf'
+  content_type 'application/pdf'
 
-  return File.read(pdf_file) if File.exists?(pdf_file)
+#  pdf_file = './tmp/resume.pdf'
+
+#  return File.read(pdf_file) if File.exists?(pdf_file)
   doc = Maruku.new(resume_data)
   kit = PDFKit.new(resume_html)
-  kit.to_file(pdf_file)
-  File.read(pdf_file)
+  kit.to_pdf
 end
 
 def resume_data
