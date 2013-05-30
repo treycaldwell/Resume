@@ -11,8 +11,8 @@ Over fifteen years of experience engineering high-quality software.  Skilled in 
 
 ### Technical Skills:
 _________________
+* Web Application Development with Ruby on Rails and Octopus Database Sharding for ActiveRecord
 * Full Stack Application Development with Java, Java EE, Java Swing, JBoss, Hibernate, SQL
-* Web Application Development with Ruby on Rails and Octopus Database Sharding for ActiveRecord, JSP, ColdFusion, ASP
 * Data Migration Tool Development with Java, Hibernate, Velocity and ATG 7.2, Microsoft SQL Server Data Transformation Services
 * Requirements Gathering, Internal Documentation, Project Reporting, Wikis
 * Scripting Experience with Python, Bash Shell Scripting, VBScript, JScript
