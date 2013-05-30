@@ -40,10 +40,12 @@ __Consultant (2007 - 2011)__
 
 * Served as member of a development team on the Justice Detainee Information System (JDIS) at the United States Marshals Service (USMS) headquarters
 * Engineered a Ruby on Rails site utilizing Octopus Database Sharding for ActiveRecord and Oracle to facilitate the merger of two distinct USMS systems used to manage subjects and fugitives
+  * Configured Apache / Phusion Passenger for production deployment
+  * Utilized Blueprint CSS framework
 * Led the design and development of the Budget and Accounting for Security Equipment (BASE)/Court Security Resource Request (Profile) module for JDIS
-* Utilized by 600 users in the Judicial Security Division to allocate and approve Court Security Officer and security system resources for over 800 federal court and court-related facilities and over 2500 federal judicial officers
-* Annually allocates over 4000 security personnel and over $30 million worth of security equipment
-* Served as an expert technical resource to Crystal Reports developers
+  * Utilized by 600 users in the Judicial Security Division to allocate and approve Court Security Officer and security system resources for over 800 federal court and court-related facilities and over 2500 federal judicial officers
+  * Annually allocates over 4000 security personnel and over $30 million worth of security equipment
+  * Served as an expert technical resource to Crystal Reports developers
 * Member of a team which provided bug fix support for the migration from Informix to Oracle database management systems
 * Worked with analysts to gather customer requirements, author design documents, and present them to government stakeholders
 * Collaborated with quality assurance analysts to develop test scripts using Rational Functional Tester
@@ -53,11 +55,11 @@ __Amentra, Inc - Reston, Virginia__
 __Consultant (2006 - 2007)__
 
 * Senior member of Reston, VA team of consultants which contributed to the rewrite of a J2EE/Oracle content management and e-commerce application for Cingular Wireless that had sales exceeding $1 million dollars per day
-* Member of the team responsible for data migration
-* Compiled team status reports
+  * Member of the team responsible for data migration
+  * Compiled team status reports
 * Worked on a team which designed a wiki for internal project and administrative use
 * Contributed to the 2.1 release of Motricity Fuel for Cingular Wireless
-* Using Java, JSP, SQL, and Agile software development methodologies developed enhancements for the content provider interface
+  * Using Java, JSP, SQL, and Agile software development methodologies developed enhancements for the content provider interface
 
 __solutionsBTC, LLC - Columbus, Georgia__  
 __Founder (2004 - 2005)__
