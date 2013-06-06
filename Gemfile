@@ -10,6 +10,10 @@ gem 'maruku'
 gem 'thin'
 gem 'pdfkit'
 
+configure :production do
+    require 'newrelic_rpm'
+end
+
 group :development, :test do
   gem "rack-test"
   gem "launchy"
