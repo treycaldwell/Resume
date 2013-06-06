@@ -6,6 +6,7 @@ require 'less'
 require 'rdiscount'
 require 'maruku'
 require 'pdfkit'
+require 'newrelic_rpm'
 
 PDFKit.configure do |config|
   config.wkhtmltopdf = 'vendor/bin/wkhtmltopdf-amd64'
