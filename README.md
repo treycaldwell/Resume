@@ -32,7 +32,10 @@ Basic resume in multiple formats on Heroku
   * Run `heroku config:set RACK_ENV=production`
   * Run `heroku config:set NEW_RELIC_LICENSE_KEY=_put your license key here_`
   * Run `heroku config:set NEW_RELIC_APP_NAME=_put the app name you want for new relic here_`
-8. `rake deploy:heroku` to push your resume to the internet on heroku (http://batman-resume.heroku.com).
+8. Setup your [Google Analytics](http://www.google.com/analytics/) account
+  * Run `heroku config:set GA_TRACKING_CODE=_put your GA tracking code here_`
+  * Run `heroku config:set GA_TRACKING_DOMAIN=_put your GA tracking domain here_`
+9. `rake deploy:heroku` to push your resume to the internet on heroku (http://batman-resume.heroku.com).
 
 ## License
 
