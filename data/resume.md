@@ -11,16 +11,16 @@ Over fifteen years of experience engineering high-quality software.  Skilled in 
 
 ### Technical Skills:
 _________________
-* Web Application Development with Ruby on Rails and Octopus Database Sharding for ActiveRecord
+* Web Application Development with Ruby on Rails and Octopus Database Sharding for ActiveRecord, Sinatra, HTML, CSS, jQuery
 * Full Stack Application Development with Java, Java EE, Java Swing, JBoss, Hibernate, SQL
 * Data Migration Tool Development with Java, Hibernate, Velocity and ATG 7.2, Microsoft SQL Server Data Transformation Services
 * Requirements Gathering, Internal Documentation, Project Reporting, Wikis
-* Scripting Experience with Python, Bash Shell Scripting, VBScript, JScript
+* Experience managing and working with remote teams
 * MySQL, Oracle, Informix, Microsoft SQL Server Databases
 * Operating System Experience with Linux (since 1.3 kernel), Windows, MacOS, Solaris
 * Version Control Systems including git, svn, cvs
+* Testing with Rational Functional Tester, JUnit, EasyMock, MiniTest, RSpec
 * Configuration, Administration, and Integration of Asterisk PBX, SIP, and Google Voice
-* Testing with Rational Functional Tester, JUnit, EasyMock
 * Industries including Payments Management, Federal Law Enforcement, Content Management, Health and Fitness, Department of Defense, Sales Force Automation
 
 ### Experience:
@@ -29,7 +29,7 @@ __United Thinkers, LLC__
 __Software Engineer / Project Manager (2012 - 2013)__
 
 * Responsible for coordinating multiple credit card processor integrations with remote developers into UniPay Gateway (JBoss/MySQL payment processing solution)
-* Coordinated the data migration of a large collections call center application
+* Contributed to the design and development of a large collection call center application data migration project
 * Configured a PHP/Apache web server
 * Provided requirements analysis and level of effort estimate for a shift management/notification system
 * Installed and configured UniPay Gateway on a Debian Linux server
@@ -66,9 +66,6 @@ __Founder (2004 - 2005)__
 
 * Founded to provide small and medium-sized enterprises with telephony solutions utilizing Digium hardware and Asterisk PBX software
 * Provided the Department of the Army at Fort Benning, GA Directorate of Public Works and Directorate of Logistics with website consulting and development services
-
-
-
 
 __Intrannuity, LLC - Columbus, Georgia__  
 __Software Engineer / Consultant (2002 - 2006)__
@@ -116,7 +113,7 @@ __French Instructor (1997 - 1998, Part-time)__
 ______________
 __Auburn University, Auburn, Alabama__  
 
-* Bachelor of Computer Engineering, August 2000
+* Bachelor of Computer Engineering
 * University Honors Program 
 
 ### Other:
