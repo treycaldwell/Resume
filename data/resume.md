@@ -16,7 +16,7 @@ _________________
 * Data Migration Tool Development with Java, Hibernate, Velocity and ATG 7.2, Microsoft SQL Server Data Transformation Services
 * Requirements Gathering, Internal Documentation, Project Reporting, Wikis
 * Experience managing and working with remote teams
-* MySQL, Oracle, Informix, Microsoft SQL Server Databases
+* MySQL, PostgreSQL, Oracle, Informix, Microsoft SQL Server Databases
 * Operating System Experience with Linux (since 1.3 kernel), Windows, MacOS, Solaris
 * Version Control Systems including git, svn, cvs
 * Testing with Rational Functional Tester, JUnit, EasyMock, MiniTest, RSpec
