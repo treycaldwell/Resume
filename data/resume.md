@@ -30,7 +30,7 @@ __Software Engineer / Project Manager (2012 - 2013)__
 
 * Responsible for coordinating multiple credit card processor integrations with remote developers into UniPay Gateway (JBoss/MySQL payment processing solution)
 * Contributed to the design and development of a large collection call center application data migration project
-* Configured a PHP/Apache web server
+* Configured and administered a PHP/Apache web server responsible for accepting collections payments
 * Provided requirements analysis and level of effort estimate for a shift management/notification system
 * Installed and configured UniPay Gateway on a Debian Linux server
 
@@ -59,7 +59,7 @@ __Consultant (2006 - 2007)__
   * Compiled team status reports
 * Worked on a team which designed a wiki for internal project and administrative use
 * Contributed to the 2.1 release of Motricity Fuel for Cingular Wireless
-  * Using Java, JSP, SQL, and Agile software development methodologies developed enhancements for the content provider interface
+  * Using Java EE, JSP, HTML, CSS, SQL, and Agile software development methodologies developed enhancements for the content provider interface
 
 __solutionsBTC, LLC - Columbus, Georgia__  
 __Founder (2004 - 2005)__
